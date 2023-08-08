@@ -1,0 +1,66 @@
+package com.nowonline.qa.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.nowonline.qa.base.TestBase;
+
+public class BusinessesPageFree extends TestBase{
+
+	//PageFactory OR Object Repository
+	@FindBy(xpath="//*[@id=\"dropdown-sector\"]/button")
+	WebElement sectorDropDown;
+		
+	@FindBy(xpath="//*[@id=\"dropdown-sector\"]/div/form/div[3]/label")
+	WebElement selectSector;
+		
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select")
+	WebElement sortingDropDown;
+		
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[1]")
+	WebElement sortingAtoZ;
+	
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[2]")
+	WebElement sortingZtoA;
+		
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[3]")
+	WebElement locationAtoZ;
+		
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[4]")
+	WebElement locationZtoA;
+		
+	//Initialization
+	public BusinessesPageFree() {
+		PageFactory.initElements(Driver, this);
+	}
+		
+	//Actions
+	public void clickSector() {
+		sectorDropDown.click();
+	}
+		
+	public void selectSector() {
+		selectSector.click();
+	}
+		
+	public void clickSortingDropDown() {
+		sortingDropDown.click();
+	}
+		
+	public void sortingZtoA() {
+		sortingZtoA.click();
+	}
+		
+	public void sortingLocationAtoZ() {
+		locationAtoZ.click();
+	}
+		
+	public void sortingLocationZtoA() {
+		locationZtoA.click();
+	}
+		
+	public void sortingAtoZ() {
+		sortingAtoZ.click();
+	}
+}
