@@ -21,8 +21,8 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop=new Properties();
-			FileInputStream ip=new FileInputStream("C:\\Users\\no02\\eclipse-workspace\\NowOnlineOne\\src\\main\\java\\com\\"
-					+ "nowonline\\qa\\config\\config.properties");
+			FileInputStream ip=new FileInputStream("C:\\Users\\no02\\git\\NowOnline\\NowOnlineOne\\src\\main\\java\\com"
+					+ "\\nowonline\\qa\\config\\config.properties");
 			prop.load(ip);
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
