@@ -99,6 +99,36 @@ public class MatchPageAdmin extends TestBase{
 	@FindBy(xpath="//*[@id=\"toggle-saved\"]/button")
 	WebElement stored;
 	
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select")
+	WebElement sorting;
+	
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[2]")
+	WebElement profileCompleted;
+	
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[3]")
+	WebElement locationone;
+	
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[4]")
+	WebElement alphabeticallyAZ;
+	
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[5]")
+	WebElement alphabeticallyZA;
+	
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[6]")
+	WebElement hourlyRateMinMax;
+	
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[7]")
+	WebElement hourlyRateMaxMin;
+	
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[8]")
+	WebElement numberOfHoursMinMax;
+	
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[9]")
+	WebElement numberOfHoursMaxMin;
+	
+	@FindBy(xpath="//*[@id=\"assignment-sorting\"]/div/select/option[1]")
+	WebElement matchBasedOnSkill;
+	
 	
 	
 	//Initialization
@@ -235,6 +265,37 @@ public class MatchPageAdmin extends TestBase{
 		stored.click();
 	}
 	
+	public void selectProfileCompleted() {
+		profileCompleted.click();
+	}
+	
+	public void selectLocation() {
+		locationone.click();
+	}
+	
+	public void selectAlphabeticallyAZ() {
+		alphabeticallyAZ.click();
+	}
+	
+	public void selectAlphabeticallyZA() {
+		alphabeticallyZA.click();
+	}
+	
+	public void selectHourlyRateMinMax() {
+		hourlyRateMinMax.click();
+	}
+	
+	public void selectHourlyRateMaxMin() {
+		hourlyRateMaxMin.click();
+	}
+	
+	public void selectNumberOfHoursMinMax() {
+		numberOfHoursMinMax.click();
+	}
+	
+	public void selectNumberOfHoursMaxMin() {
+		numberOfHoursMaxMin.click();
+	}
 	
 
 }

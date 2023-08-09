@@ -138,6 +138,23 @@ public class MatchPageAdminTest extends TestBase{
 		testUtil.testWaitEight();
 		matchPageAdmin.clickStored();
 		testUtil.testWaitEight();
+		//Sorting
+		matchPageAdmin.selectProfileCompleted();
+		testUtil.testWaitEight();
+		matchPageAdmin.selectLocation();
+		testUtil.testWaitEight();
+		matchPageAdmin.selectAlphabeticallyAZ();
+		testUtil.testWaitEight();
+		matchPageAdmin.selectAlphabeticallyZA();
+		testUtil.testWaitEight();
+		matchPageAdmin.selectHourlyRateMinMax();
+		testUtil.testWaitEight();
+		matchPageAdmin.selectHourlyRateMaxMin();
+		testUtil.testWaitEight();
+		matchPageAdmin.selectNumberOfHoursMinMax();
+		testUtil.testWaitEight();
+		matchPageAdmin.selectNumberOfHoursMaxMin();
+		testUtil.testWaitEight();
 		
 	}
 	
