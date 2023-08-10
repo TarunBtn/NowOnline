@@ -21,6 +21,27 @@ public class HomePageAdmin extends TestBase{
 	@FindBy(xpath="//*[@id=\"dashboard\"]/div[3]/div[2]/div/div[2]/div[2]/div[2]/div[1]/button/span")
 	WebElement acceptAllCookies;
 	
+	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[3]/a/img")
+	WebElement userLogo;
+	
+	@FindBy(xpath="//*[@id=\"sidebar-right\"]/div/div/div/a[1]")
+	WebElement myDashboard;
+	
+	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[3]/a")
+	WebElement openMenu;
+	
+	@FindBy(xpath="//*[@id=\"sidebar-right\"]/div/div/button/i")
+	WebElement closeMenu;
+	
+	@FindBy(xpath="//*[@id=\"sidebar-right\"]/div/div/div/a[2]")
+	WebElement chatTab;
+	
+	@FindBy(xpath="//*[@id=\"modal-chat___BV_modal_body_\"]/button")
+	WebElement chatClose;
+	
+	@FindBy(xpath="//*[@id=\"sidebar-right\"]/div/div/div/a[3]")
+	WebElement myNotificationsTab;
+	
 	//Initialization
 	public HomePageAdmin() {
 		PageFactory.initElements(Driver, this);
@@ -45,6 +66,34 @@ public class HomePageAdmin extends TestBase{
 	
 	public void clickAcceptAllCookies() {
 		acceptAllCookies.click();
+	}
+	
+	public void clickUserLogo() {
+		userLogo.click();
+	}
+	
+	public void clickOpenMenu() {
+		openMenu.click();
+	}
+	
+	public void clickCloseMenu() {
+		closeMenu.click();
+	}
+	
+	public void clickMydashboardTab() {
+		myDashboard.click();
+	}
+	
+	public void clickChatTab() {
+		chatTab.click();
+	}
+	
+	public void clickChatCloseSign() {
+		chatClose.click();
+	}
+	
+	public void clickMynotificationsTab() {
+		myNotificationsTab.click();
 	}
 	
 
