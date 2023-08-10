@@ -19,6 +19,9 @@
       <class name="com.nowonline.qa.testcases.AssignmentsPageAdminTest"/>
       <class name="com.nowonline.qa.testcases.CommunityPageAdminTest"/>
       <class name="com.nowonline.qa.testcases.MatchPageAdminTest"/>
+      <class name="com.nowonline.qa.testcases.UlogoMydashboardPageTest"/>
+      <class name="com.nowonline.qa.testcases.UlogoChatPageTest"/>
+      <class name="com.nowonline.qa.testcases.UlogoMynotificationsPageTest"/>
        
     </classes>
   </test> <!-- Test -->
