@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-07T17:54:39 IST" name="Default suite" finished-at="2023-08-07T17:56:01 IST" duration-ms="81962">
+  <suite started-at="2023-08-11T12:05:46 IST" name="Default suite" finished-at="2023-08-11T12:06:36 IST" duration-ms="49351">
     <groups>
     </groups>
-    <test started-at="2023-08-07T17:54:39 IST" name="Default test" finished-at="2023-08-07T17:56:01 IST" duration-ms="81962">
-      <class name="com.nowonline.qa.testcases.BusinessesPageFreeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nowonline.qa.testcases.BusinessesPageFreeTest@273e7444]" started-at="2023-08-07T17:54:39 IST" name="setUp" finished-at="2023-08-07T17:55:22 IST" duration-ms="43219" status="PASS">
+    <test started-at="2023-08-11T12:05:46 IST" name="Default test" finished-at="2023-08-11T12:06:36 IST" duration-ms="49351">
+      <class name="com.nowonline.qa.testcases.UlogoMydashboardPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nowonline.qa.testcases.UlogoMydashboardPageTest@273e7444]" started-at="2023-08-11T12:05:46 IST" name="setUp" finished-at="2023-08-11T12:06:35 IST" duration-ms="48949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="businessesPageFree()[pri:0, instance:com.nowonline.qa.testcases.BusinessesPageFreeTest@273e7444]" started-at="2023-08-07T17:55:22 IST" name="businessesPageFree" finished-at="2023-08-07T17:56:01 IST" duration-ms="38458" status="PASS">
+        <test-method signature="myDashboard()[pri:0, instance:com.nowonline.qa.testcases.UlogoMydashboardPageTest@273e7444]" started-at="2023-08-11T12:06:35 IST" name="myDashboard" finished-at="2023-08-11T12:06:35 IST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- businessesPageFree -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nowonline.qa.testcases.BusinessesPageFreeTest@273e7444]" started-at="2023-08-07T17:56:01 IST" name="tearDown" finished-at="2023-08-07T17:56:01 IST" duration-ms="268" status="PASS">
+        </test-method> <!-- myDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nowonline.qa.testcases.UlogoMydashboardPageTest@273e7444]" started-at="2023-08-11T12:06:35 IST" name="tearDown" finished-at="2023-08-11T12:06:36 IST" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.nowonline.qa.testcases.BusinessesPageFreeTest -->
+      </class> <!-- com.nowonline.qa.testcases.UlogoMydashboardPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
