@@ -42,6 +42,9 @@ public class HomePageAdmin extends TestBase{
 	@FindBy(xpath="//*[@id=\"sidebar-right\"]/div/div/div/a[3]")
 	WebElement myNotificationsTab;
 	
+	@FindBy(xpath="//*[@id=\"sidebar-right\"]/div/div/div/span[1]/a")
+	WebElement myProfileTab;
+	
 	//Initialization
 	public HomePageAdmin() {
 		PageFactory.initElements(Driver, this);
@@ -94,6 +97,10 @@ public class HomePageAdmin extends TestBase{
 	
 	public void clickMynotificationsTab() {
 		myNotificationsTab.click();
+	}
+	
+	public void clickMyProfileTab() {
+		myProfileTab.click();
 	}
 	
 
