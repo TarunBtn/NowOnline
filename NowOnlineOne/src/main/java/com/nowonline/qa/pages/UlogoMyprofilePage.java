@@ -35,11 +35,55 @@ public class UlogoMyprofilePage extends TestBase{
 		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/div[1]/div/form/div/button")
 		WebElement saveAdditionalSkills;
 		
-		@FindBy(xpath="//*[@id=\"skills\"]/div/div/div/div[2]/ul/li[16]/div/a/span")
+		@FindBy(xpath="//*[@id=\"skills\"]/div[2]/div/div/div[2]/ul/li[21]/div/a/span")
 		WebElement clickRemoveSkills;
 		
 		@FindBy(xpath="//*[@id=\"remove\"]/div/div/div[2]/button[1]")
 		WebElement deleteSkills;
+		
+		@FindBy(xpath="//*[@id=\"navigation\"]/div/div/nav/a[3]")
+		WebElement workExperienceTab;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/div/div[1]/div/a[1]")
+		WebElement addWorkExperience;
+		
+		@FindBy(id="functie")
+		WebElement function;
+		
+		@FindBy(id="bedrijf")
+		WebElement company;
+		
+		@FindBy(id="type")
+		WebElement type;
+		
+		@FindBy(xpath="//*[@id=\"type\"]/option[2]")
+		WebElement selectType;
+		
+		@FindBy(id="beschrijving")
+		WebElement description;
+		
+		@FindBy(xpath="//*[@id=\"startdatum\"]/div/i/svg")
+		WebElement startDateCalender;
+		
+		@FindBy(xpath="//*[@id=\"my-profile\"]/div[7]/div/div/div/div[1]/button[1]/i")
+		WebElement selectYear;
+		
+		@FindBy(xpath="//*[@id=\"my-profile\"]/div[7]/div/div/div/div[2]/table/tbody/tr[1]/td[4]/div")
+		WebElement selectDate;
+		
+		@FindBy(xpath="//*[@id=\"einddatum\"]/div/i/svg")
+		WebElement endDateCalender;
+		
+		@FindBy(xpath="//*[@id=\"my-profile\"]/div[7]/div/div/div/div[2]/table/tbody/tr[1]/td[2]/div")
+		WebElement selectEndDate;
+		
+		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/form/div[9]/div/div[2]/div[3]/div/div/div/div[1]/input")
+		WebElement selectProfile;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/form/div[12]/div/button")
+		WebElement saveBtn;
+		
+		
 		
 		//Initialization
 		public UlogoMyprofilePage() {
@@ -89,6 +133,30 @@ public class UlogoMyprofilePage extends TestBase{
 		
 		public void clickDeleteSkills() {
 			deleteSkills.click();
+		}
+		
+		public void clickWorkExperienceTab() {
+			workExperienceTab.click();
+		}
+		
+		public void clickAddWorkExperience() {
+			addWorkExperience.click();
+		}
+		
+		public void enterFunction(String value) {
+			function.sendKeys(value);
+		}
+		
+		public void enterCompany(String value) {
+			company.sendKeys(value);
+		}
+		
+		public void clickTypeWorkExperience() {
+			type.click();
+		}
+		
+		public void selectTypeWorkExperience() {
+			selectType.click();
 		}
 
 }

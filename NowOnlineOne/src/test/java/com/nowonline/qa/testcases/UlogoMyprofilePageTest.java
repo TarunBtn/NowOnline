@@ -94,12 +94,34 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitFour();
 		uLogoMyprofilePage.clickDeleteSkills();
 		testUtil.testWaitFour();
+		//Work experience
+		uLogoMyprofilePage.clickWorkExperienceTab();
+		testUtil.testWaitEight();
+		uLogoMyprofilePage.clickAddWorkExperience();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.enterFunction("DBA");
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.enterCompany("TCS");
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.clickTypeWorkExperience();
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.selectTypeWorkExperience();
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.clickTypeWorkExperience();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		
+		
+		
 		
 	}
 	
 	@AfterMethod
 	public void tearDown() {
-		Driver.quit();
+		//Driver.quit();
 	}
 
 }
