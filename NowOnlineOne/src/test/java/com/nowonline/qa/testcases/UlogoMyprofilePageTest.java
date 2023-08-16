@@ -114,14 +114,12 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		
-		
-		
-		
+				
 	}
 	
 	@AfterMethod
 	public void tearDown() {
-		//Driver.quit();
+		Driver.quit();
 	}
 
 }
