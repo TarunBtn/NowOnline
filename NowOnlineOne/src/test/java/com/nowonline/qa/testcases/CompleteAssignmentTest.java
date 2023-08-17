@@ -58,12 +58,6 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.testWaitFour();
 	}
 	
-	//@Test(priority=1)
-	//public void completeAssignmentTitleTest() {
-		//String title=completeAssignment.validateCompleteAssignmentTitle();
-		//Assert.assertEquals(title, "Mijn opdrachten - Younited®");
-	//}
-	
 	@Test
 	public void completeAssignmentTest()throws Exception {
 		completeAssignment.selectCompany();
@@ -96,16 +90,22 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.testWaitTwo();
 		//Select start date
 		completeAssignment.selectStartDateDropDown();
-		//testUtil.testWaitTwo();
-		//completeAssignment.selectStartMonth();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
+		completeAssignment.selectStartMonth();
+		testUtil.testWaitTwo();
+		completeAssignment.selectStartMonth();
+		testUtil.testWaitTwo();
 		completeAssignment.selectStartDate();
 		testUtil.testWaitFour();
 		//Select end date
 		completeAssignment.selectEndDateDropDown();
 		testUtil.testWaitTwo();
 		completeAssignment.selectEndYear();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
+		completeAssignment.selectEndYear();
+		testUtil.testWaitTwo();
+		completeAssignment.selectEndYear();
+		testUtil.testWaitTwo();
 		completeAssignment.selectEndDate();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
@@ -117,6 +117,8 @@ public class CompleteAssignmentTest extends TestBase{
 		completeAssignment.selectWorkingThinkingLevel();
 		testUtil.testWaitFour();
 		//Select FieldOfExpertise
+		completeAssignment.clickFieldOfExpertise();
+		testUtil.testWaitFour();
 		completeAssignment.selectFieldOfExpertise();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
@@ -128,6 +130,7 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		//completeAssignment.clickSaveButton();
+		
 	}
 	
 	
