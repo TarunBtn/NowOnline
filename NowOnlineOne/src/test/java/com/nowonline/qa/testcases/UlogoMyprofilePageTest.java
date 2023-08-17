@@ -89,6 +89,8 @@ public class UlogoMyprofilePageTest extends TestBase{
 		//Save additional skills
 		uLogoMyprofilePage.clickSaveAdditionalSkills();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		//Remove skills
 		uLogoMyprofilePage.clickRemoveSkills();
 		testUtil.testWaitFour();
@@ -101,7 +103,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		uLogoMyprofilePage.enterFunction("DBA");
+		uLogoMyprofilePage.enterFunction("Quality Assurance");
 		testUtil.testWaitFour();
 		uLogoMyprofilePage.enterCompany("TCS");
 		testUtil.testWaitFour();
@@ -113,8 +115,38 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
+		uLogoMyprofilePage.enterDescription("This is test data");
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickStartDateCalender();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.selectStartYear();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.selectStartYear();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.selectStartYear();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.selectStartDate();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickEndDateCalender();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.selectEndDate();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.enterProfile("Quality Assurance Engineer");
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.selectProfile();
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.clickSaveBtn();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickEditWorkExperience();
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.deleteWorkExperience();
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.clickDeleteWorkExperience();
+		testUtil.testWaitFour();
 		
-				
+		
 	}
 	
 	@AfterMethod

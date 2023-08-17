@@ -62,7 +62,7 @@ public class UlogoMyprofilePage extends TestBase{
 		@FindBy(id="beschrijving")
 		WebElement description;
 		
-		@FindBy(xpath="//*[@id=\"startdatum\"]/div/i/svg")
+		@FindBy(name="date")
 		WebElement startDateCalender;
 		
 		@FindBy(xpath="//*[@id=\"my-profile\"]/div[7]/div/div/div/div[1]/button[1]/i")
@@ -71,18 +71,29 @@ public class UlogoMyprofilePage extends TestBase{
 		@FindBy(xpath="//*[@id=\"my-profile\"]/div[7]/div/div/div/div[2]/table/tbody/tr[1]/td[4]/div")
 		WebElement selectDate;
 		
-		@FindBy(xpath="//*[@id=\"einddatum\"]/div/i/svg")
+		@FindBy(xpath="//*[@id=\"einddatum\"]/div/i")
 		WebElement endDateCalender;
 		
 		@FindBy(xpath="//*[@id=\"my-profile\"]/div[7]/div/div/div/div[2]/table/tbody/tr[1]/td[2]/div")
 		WebElement selectEndDate;
 		
 		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/form/div[9]/div/div[2]/div[3]/div/div/div/div[1]/input")
+		WebElement enterProfile;
+		
+		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/form/div[9]/div/div[2]/div[3]/div/div/div/div[2]/a/div[2]/span")
 		WebElement selectProfile;
 		
 		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/form/div[12]/div/button")
 		WebElement saveBtn;
 		
+		@FindBy(xpath="//*[@id=\"timeline\"]/div[3]/div[2]/div/div/a")
+		WebElement editWorkExperience;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/form/div[13]/div/a")
+		WebElement deleteWorkExperience;
+		
+		@FindBy(xpath="//*[@id=\"remove\"]/div/div/div[3]/button[1]")
+		WebElement clickDeleteWorkExperience;
 		
 		
 		//Initialization
@@ -157,6 +168,54 @@ public class UlogoMyprofilePage extends TestBase{
 		
 		public void selectTypeWorkExperience() {
 			selectType.click();
+		}
+		
+		public void enterDescription(String value) {
+			description.sendKeys(value);
+		}
+		
+		public void clickStartDateCalender() {
+			startDateCalender.click();
+		}
+		
+		public void selectStartYear() {
+			selectYear.click();
+		}
+		
+		public void selectStartDate() {
+			selectDate.click();
+		}
+		
+		public void clickEndDateCalender() {
+			endDateCalender.click();
+		}
+		
+		public void selectEndDate() {
+			selectEndDate.click();
+		}
+		
+		public void enterProfile(String value) {
+			enterProfile.sendKeys(value);
+		}
+		
+		public void selectProfile() {
+			selectProfile.click();
+		}
+		
+		public void clickSaveBtn() {
+			saveBtn.click();
+		}
+		
+		public void clickEditWorkExperience() {
+			editWorkExperience.click();
+		}
+		
+		public void deleteWorkExperience() {
+			deleteWorkExperience.click();
+		}
+		
+		public void clickDeleteWorkExperience() {
+			clickDeleteWorkExperience.click();
 		}
 
 }
