@@ -91,6 +91,8 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		//Remove skills
 		uLogoMyprofilePage.clickRemoveSkills();
 		testUtil.testWaitFour();
@@ -103,7 +105,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		uLogoMyprofilePage.enterFunction("Quality Assurance");
+		uLogoMyprofilePage.enterFunction("DBA");
 		testUtil.testWaitFour();
 		uLogoMyprofilePage.enterCompany("TCS");
 		testUtil.testWaitFour();
@@ -133,25 +135,57 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		uLogoMyprofilePage.enterProfile("Quality Assurance Engineer");
+		uLogoMyprofilePage.enterProfile("Database administrator");
 		testUtil.testWaitFour();
 		uLogoMyprofilePage.selectProfile();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickSaveBtn();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickEditWorkExperience();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		uLogoMyprofilePage.deleteWorkExperience();
 		testUtil.testWaitFour();
 		uLogoMyprofilePage.clickDeleteWorkExperience();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
+		//Upload CV
+		uLogoMyprofilePage.clickUploadCV();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickChooseFile();
+		testUtil.testWaitFour();
+		testUtil.uploadFile("D:\\Testfile.docx");
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.clickUploadFile();
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.clickUpdateMyProfile();
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.clickCancelUploadCV();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		
 		
+			
 	}
 	
 	@AfterMethod
 	public void tearDown() {
-		Driver.quit();
+		//Driver.quit();
 	}
 
 }

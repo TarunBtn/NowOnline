@@ -95,6 +95,23 @@ public class UlogoMyprofilePage extends TestBase{
 		@FindBy(xpath="//*[@id=\"remove\"]/div/div/div[3]/button[1]")
 		WebElement clickDeleteWorkExperience;
 		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/div/div[1]/div/a[2]")
+		WebElement uploadCV;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/div/div/div/div[1]/div/div/div[3]/div/div/div/label/span")
+		WebElement chooseFile;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/div/div/div/div[1]/div/div/div[4]/div/button")
+		WebElement uploadFile;
+		
+		@FindBy(xpath="//*[@id=\"uploadCvConfirmation___BV_modal_body_\"]/div[2]/button[1]")
+		WebElement clickUpdateMyProfile;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/div/div/div/div[2]/a")
+		WebElement clickCancelUploadCV;
+		
+		
+		
 		
 		//Initialization
 		public UlogoMyprofilePage() {
@@ -216,6 +233,26 @@ public class UlogoMyprofilePage extends TestBase{
 		
 		public void clickDeleteWorkExperience() {
 			clickDeleteWorkExperience.click();
+		}
+		
+		public void clickUploadCV() {
+			uploadCV.click();
+		}
+		
+		public void clickChooseFile() {
+			chooseFile.click();
+		}
+		
+		public void clickUploadFile() {
+			uploadFile.click();
+		}
+		
+		public void clickUpdateMyProfile() {
+			clickUpdateMyProfile.click();
+		}
+		
+		public void clickCancelUploadCV() {
+			clickCancelUploadCV.click();
 		}
 
 }
