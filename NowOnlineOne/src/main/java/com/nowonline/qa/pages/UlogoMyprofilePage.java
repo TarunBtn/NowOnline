@@ -110,6 +110,39 @@ public class UlogoMyprofilePage extends TestBase{
 		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/div/div/div/div[2]/a")
 		WebElement clickCancelUploadCV;
 		
+		@FindBy(xpath="//*[@id=\"navigation\"]/div/div/nav/a[4]")
+		WebElement educationsTab;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/div[1]/div/a")
+		WebElement addTraining;
+		
+		@FindBy(id="studierichting")
+		WebElement fieldOfStudy;
+		
+		@FindBy(id="opleidingsniveau")
+		WebElement educationLevel;
+		
+		@FindBy(xpath="//*[@id=\"opleidingsniveau\"]/option[5]")
+		WebElement selectEducationLevel;
+		
+		@FindBy(id="van")
+		WebElement startingYear;
+		
+		@FindBy(xpath="//*[@id=\"van\"]/option[7]")
+		WebElement selectStartingYear;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/form/div[8]/div/button")
+		WebElement clickSaveBtn;
+		
+		@FindBy(xpath="//*[@id=\"timeline\"]/div[1]/div[2]/div/div/a")
+		WebElement editEducations;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/form/div[9]/div/a")
+		WebElement deleteEducations;
+		
+		@FindBy(xpath="//*[@id=\"remove\"]/div/div/div[3]/button[1]")
+		WebElement clickDeleteEducations;
+		
 		
 		
 		
@@ -253,6 +286,50 @@ public class UlogoMyprofilePage extends TestBase{
 		
 		public void clickCancelUploadCV() {
 			clickCancelUploadCV.click();
+		}
+		
+		public void clickEducationsTab() {
+			educationsTab.click();
+		}
+		
+		public void clickAddTraining() {
+			addTraining.click();
+		}
+		
+		public void enterFieldOfStudy(String value) {
+			fieldOfStudy.sendKeys(value);
+		}
+		
+		public void clickEducationLevel() {
+			educationLevel.click();
+		}
+		
+		public void selectEducationLevel() {
+			selectEducationLevel.click();
+		}
+		
+		public void clickStartingYear() {
+			startingYear.click();
+		}
+		
+		public void selectStartingYear() {
+			selectStartingYear.click();
+		}
+		
+		public void clickSaveBtnOne() {
+			clickSaveBtn.click();
+		}
+		
+		public void clickEditEducations() {
+			editEducations.click();
+		}
+		
+		public void clickDeleteEducations() {
+			deleteEducations.click();
+		}
+		
+		public void clickConfirmDeleteEducations() {
+			clickDeleteEducations.click();
 		}
 
 }

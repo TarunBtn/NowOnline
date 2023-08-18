@@ -178,14 +178,52 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		
+		//Educations
+		uLogoMyprofilePage.clickEducationsTab();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickAddTraining();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.enterFieldOfStudy("Computer Science");
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickEducationLevel();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.selectEducationLevel();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickEducationLevel();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickStartingYear();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.selectStartingYear();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickStartingYear();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickSaveBtnOne();
+		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickEditEducations();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickDeleteEducations();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickConfirmDeleteEducations();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		
 			
 	}
 	
 	@AfterMethod
 	public void tearDown() {
-		//Driver.quit();
+		Driver.quit();
 	}
 
 }
