@@ -40,12 +40,13 @@ public class AssignmentsPageAdminTest extends TestBase{
 	}
 	
 	@Test
-	public void assignmentsPage()throws Exception {		
+	public void assignmentsPage()throws Exception {	
+		//ValueFilterAssignment
 		assignmentsPageFree.enterAssignmentsName("QA EngineerEight");
 		testUtil.testWaitFour();
-		assignmentsPageFree.selectValue();
+		assignmentsPageFree.selectAssignmentsValue();
 		testUtil.testWaitFour();
-		assignmentsPageFree.clearFilter();
+		assignmentsPageFree.clearAssignmentsFilter();
 		testUtil.testWaitFour();
 		//Sector
 		assignmentsPageFree.clickSectorTab();
@@ -98,86 +99,86 @@ public class AssignmentsPageAdminTest extends TestBase{
 		assignmentsPageFree.clickDuration();
 		testUtil.testWaitTwo();
 		//Work & Thinking level
-		assignmentsPageFree.clickWorkAndThinkingLevel();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.selectWorkAndThinkingLevel();
-		testUtil.testWaitFour();
-		assignmentsPageFree.clickWorkAndThinkingLevel();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.clickWorkAndThinkingLevel();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.selectWorkAndThinkingLevel();
-		testUtil.testWaitFour();
-		assignmentsPageFree.clickWorkAndThinkingLevel();
-		testUtil.testWaitTwo();
-		//Hours
-		assignmentsPageFree.clickHoursTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.selectHours();
-		testUtil.testWaitEight();
-		assignmentsPageFree.applyHoursFilter();
-		testUtil.testWaitEight();
-		assignmentsPageFree.clickHoursTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.resetHoursFilter();
-		testUtil.testWaitEight();
-		assignmentsPageFree.clickHoursTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.clickCancelHours();
-		testUtil.testWaitTwo();
-		//Hourly rate
-		assignmentsPageFree.clickHourlyRateTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.selectHourlyRate();
-		testUtil.testWaitFour();
-		assignmentsPageFree.applyHourlyRateFilter();
-		testUtil.testWaitEight();
-		assignmentsPageFree.clickHourlyRateTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.resetHourlyRateFilter();
-		testUtil.testWaitEight();
-		assignmentsPageFree.clickHourlyRateTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.clickCancelHourlyRate();
-		testUtil.testWaitTwo();
-		//Location
-		assignmentsPageFree.clickLocationTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.enterLocation("Noordwijk, Netherlands");
-		testUtil.testWaitFour();
-		assignmentsPageFree.applyLocationFilter();
-		testUtil.testWaitEight();
-		assignmentsPageFree.clickLocationTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.resetLocation();
-		testUtil.testWaitEight();
-		assignmentsPageFree.clickLocationTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.clickCancelLocation();
-		testUtil.testWaitTwo();
-		//View matches
-		assignmentsPageFree.clickViewMatches();
-		testUtil.testWaitEight();
-		assignmentsPageFree.clickViewMatches();
-		testUtil.testWaitEight();
-		//Favourites
-		assignmentsPageFree.clickFavorites();
-		testUtil.testWaitEight();
-		assignmentsPageFree.clickFavorites();
-		testUtil.testWaitEight();
-		//Sorting
-		assignmentsPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.selectPublicationDateOldFirst();
-		testUtil.testWaitEight();	
-		assignmentsPageFree.selectAtHourlyRate();
-		testUtil.testWaitEight();
-		assignmentsPageFree.selectByNumberOfHours();
-		testUtil.testWaitEight();
-		assignmentsPageFree.selectPublicationDateNewFirst();
-		testUtil.testWaitEight();
-		assignmentsPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();
+        assignmentsPageFree.clickWorkAndThinkingLevel();
+        testUtil.testWaitTwo();
+	    assignmentsPageFree.selectWorkAndThinkingLevel();
+	    testUtil.testWaitFour();
+	    assignmentsPageFree.clickWorkAndThinkingLevel();
+	    testUtil.testWaitTwo();
+	    assignmentsPageFree.clickWorkAndThinkingLevel();
+	    testUtil.testWaitTwo();
+	    assignmentsPageFree.selectWorkAndThinkingLevel();
+	    testUtil.testWaitFour();
+	    assignmentsPageFree.clickWorkAndThinkingLevel();
+	    testUtil.testWaitTwo();
+	    //Hours
+	  	assignmentsPageFree.clickHoursTab();
+	  	testUtil.testWaitTwo();
+	  	assignmentsPageFree.selectHours();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.applyHoursFilter();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.clickHoursTab();
+	  	testUtil.testWaitTwo();
+	  	assignmentsPageFree.resetHoursFilter();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.clickHoursTab();
+	  	testUtil.testWaitTwo();
+	  	assignmentsPageFree.clickCancelHours();
+	  	testUtil.testWaitTwo();
+	  	//Hourly rate
+	  	assignmentsPageFree.clickHourlyRateTab();
+	  	testUtil.testWaitTwo();
+	  	assignmentsPageFree.selectHourlyRate();
+	  	testUtil.testWaitFour();
+	  	assignmentsPageFree.applyHourlyRateFilter();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.clickHourlyRateTab();
+	  	testUtil.testWaitTwo();
+	  	assignmentsPageFree.resetHourlyRateFilter();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.clickHourlyRateTab();
+	  	testUtil.testWaitTwo();
+	  	assignmentsPageFree.clickCancelHourlyRate();
+	  	testUtil.testWaitTwo();
+	  	//Location
+	  	assignmentsPageFree.clickLocationTab();
+	  	testUtil.testWaitTwo();
+	  	assignmentsPageFree.enterLocation("Noordwijk, Netherlands");
+	  	testUtil.testWaitFour();
+	  	assignmentsPageFree.applyLocationFilter();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.clickLocationTab();
+	  	testUtil.testWaitTwo();
+	  	assignmentsPageFree.resetLocation();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.clickLocationTab();
+	  	testUtil.testWaitFour();
+	  	assignmentsPageFree.clickCancelLocation();
+	  	testUtil.testWaitFour();
+	  	//View matches
+	  	assignmentsPageFree.clickViewMatches();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.clickViewMatches();
+	  	testUtil.testWaitEight();
+	  	//Favourites
+	  	assignmentsPageFree.clickFavorites();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.clickFavorites();
+	  	testUtil.testWaitEight();
+	  	//Sorting
+	  	assignmentsPageFree.clickSortingDropDown();
+	  	testUtil.testWaitTwo();
+	  	assignmentsPageFree.selectPublicationDateOldFirst();
+	  	testUtil.testWaitEight();	
+	  	assignmentsPageFree.selectAtHourlyRate();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.selectByNumberOfHours();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.selectPublicationDateNewFirst();
+	  	testUtil.testWaitEight();
+	  	assignmentsPageFree.clickSortingDropDown();
+	  	testUtil.testWaitTwo();
 	}
 	
 	@AfterMethod
