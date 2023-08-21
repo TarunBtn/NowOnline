@@ -229,7 +229,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 		uLogoMyprofilePage.enterDescriptionCourse("This is test data");
 		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickCompletedOnDateCourse();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		uLogoMyprofilePage.selectCompletedOnDateCourse();
 		testUtil.testWaitTwo();
 		uLogoMyprofilePage.clickSaveCourse();
