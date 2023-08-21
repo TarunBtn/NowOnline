@@ -143,6 +143,36 @@ public class UlogoMyprofilePage extends TestBase{
 		@FindBy(xpath="//*[@id=\"remove\"]/div/div/div[3]/button[1]")
 		WebElement clickDeleteEducations;
 		
+		@FindBy(xpath="//*[@id=\"navigation\"]/div/div/nav/a[5]")
+		WebElement coursesTab;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/div[1]/div/a")
+		WebElement addCourse;
+		
+		@FindBy(id="cursus")
+		WebElement course;
+		
+		@FindBy(id="omschrijving")
+		WebElement descriptionCourse;
+		
+		@FindBy(name="date")
+		WebElement clickCompletedOnDate;
+
+		@FindBy(xpath="//*[@id=\"my-profile\"]/div[5]/div/div/div/div[2]/table/tbody/tr[1]/td[2]/div")
+		WebElement selectCompletedOnDate;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/form/div[5]/div/button")
+		WebElement clickSaveCourse;
+		
+		@FindBy(xpath="//*[@id=\"timeline\"]/div[2]/div[2]/div/div/a")
+		WebElement editCourse;
+		
+		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/form/div[6]/div/a")
+		WebElement deleteCourse;
+		
+		@FindBy(xpath="//*[@id=\"remove\"]/div/div/div[3]/button[1]")
+		WebElement confirmDeleteCourse;
+		
 		
 		
 		
@@ -330,6 +360,46 @@ public class UlogoMyprofilePage extends TestBase{
 		
 		public void clickConfirmDeleteEducations() {
 			clickDeleteEducations.click();
+		}
+		
+		public void clickCoursesTab() {
+			coursesTab.click();
+		}
+		
+		public void clickAddCourse() {
+			addCourse.click();
+		}
+		
+		public void enterCourse(String value) {
+			course.sendKeys(value);
+		}
+		
+		public void enterDescriptionCourse(String value) {
+			descriptionCourse.sendKeys(value);
+		}
+
+		public void clickCompletedOnDateCourse() {
+			clickCompletedOnDate.click();
+		}
+		
+		public void selectCompletedOnDateCourse() {
+			selectCompletedOnDate.click();
+		}
+		
+		public void clickSaveCourse() {
+			clickSaveCourse.click();
+		}
+		
+		public void clickEditCourse() {
+			editCourse.click();
+		}
+		
+		public void clickDeleteCourse() {
+			deleteCourse.click();
+		}
+		
+		public void clickConfirmDeleteCourse() {
+			confirmDeleteCourse.click();
 		}
 
 }

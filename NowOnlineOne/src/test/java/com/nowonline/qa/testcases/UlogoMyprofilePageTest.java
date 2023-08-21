@@ -217,6 +217,35 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
+		//Courses
+		uLogoMyprofilePage.clickCoursesTab();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickAddCourse();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.enterCourse("Data Security");
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.enterDescriptionCourse("This is test data");
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickCompletedOnDateCourse();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.selectCompletedOnDateCourse();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickSaveCourse();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickEditCourse();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickDeleteCourse();
+		testUtil.testWaitFour();
+		uLogoMyprofilePage.clickConfirmDeleteCourse();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		
 			
 	}
