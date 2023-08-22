@@ -80,8 +80,8 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.testWaitEleven();
 		//Generate description
 		completeAssignment.clickGenerateDescription();
-		testUtil.testWaitEleven();
-		testUtil.testWaitEleven();
+		testUtil.testWaitFourteen();
+		testUtil.testWaitFourteen();
 		completeAssignment.clickUseThisText();
 		testUtil.testWaitEight();
 		testUtil.scrollDown();
