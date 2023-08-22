@@ -65,7 +65,7 @@ public class AssignmentsPageFreeTest extends TestBase{
 		testUtil.testWaitTwo();
 		assignmentsPageFree.enterSkill();
 		testUtil.testWaitFour();
-		assignmentsPageFree.enterSkillValue();
+		assignmentsPageFree.enterSkillValue("Postman");
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectSkillToolTip();
 		testUtil.testWaitFour();

@@ -174,8 +174,8 @@ public class AssignmentsPageFree extends TestBase{
 				//enterSkill.sendKeys(Keys.TAB);
 			}
 			
-			public void enterSkillValue() {
-				enterSkill.sendKeys("Postman");
+			public void enterSkillValue(String value) {
+				enterSkill.sendKeys(value);
 			}
 				
 			public void selectSkillToolTip() {
