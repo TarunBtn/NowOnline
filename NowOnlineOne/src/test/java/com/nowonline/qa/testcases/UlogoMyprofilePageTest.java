@@ -177,7 +177,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 		uLogoMyprofilePage.clickCancelUploadCV();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Educations
 		uLogoMyprofilePage.clickEducationsTab();
 		testUtil.testWaitFour();
@@ -246,8 +246,11 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
+		uLogoMyprofilePage.clickInstitutionsTab();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		
-			
 	}
 	
 	@AfterMethod
