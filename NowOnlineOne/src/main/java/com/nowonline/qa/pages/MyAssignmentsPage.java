@@ -51,6 +51,9 @@ public class MyAssignmentsPage extends TestBase{
 		@FindBy(id="change-status")
 		WebElement updateStatusEntrepreneur;
 		
+		@FindBy(xpath="//*[@id=\"navigation\"]/div/div/nav[1]/a[2]")
+		WebElement newTab;
+		
 		@FindBy(xpath="//*[@id=\"navigation\"]/div/div/nav[1]/a[3]")
 		WebElement pendingTab;
 			
@@ -103,6 +106,10 @@ public class MyAssignmentsPage extends TestBase{
 		
 		public void updateStatusEntrepreneur() {
 			updateStatusEntrepreneur.click();
+		}
+		
+		public void clickNewTab() {
+			newTab.click();
 		}
 		
 		public void clickPendingTab() {

@@ -75,6 +75,13 @@ public class UlogoMyassignmentsPageTest extends TestBase{
 		testUtil.testWaitTwo();
 		myAssignmentsPage.updateStatusEntrepreneur();
 		testUtil.testWaitEight();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
+		myAssignmentsPage.clickNewTab();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		
 	}
 	
 	@AfterMethod
