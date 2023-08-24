@@ -21,7 +21,7 @@ public class HomePageAdmin extends TestBase{
 	@FindBy(xpath="//*[@id=\"dashboard\"]/div[3]/div[2]/div/div[2]/div[2]/div[2]/div[1]/button/span")
 	WebElement acceptAllCookies;
 	
-	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[3]/a/img")
+	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[2]/div[1]/ul/li[4]/div/button/img")
 	WebElement userLogo;
 	
 	@FindBy(xpath="//*[@id=\"sidebar-right\"]/div/div/div/a[1]")
@@ -44,6 +44,9 @@ public class HomePageAdmin extends TestBase{
 	
 	@FindBy(xpath="//*[@id=\"sidebar-right\"]/div/div/div/span[1]/a")
 	WebElement myProfileTab;
+	
+	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[2]/div[1]/ul/li[4]/div/div/div/div[2]/ul/li[2]/a")
+	WebElement myAssignmentsTab;
 	
 	//Initialization
 	public HomePageAdmin() {
@@ -101,6 +104,10 @@ public class HomePageAdmin extends TestBase{
 	
 	public void clickMyProfileTab() {
 		myProfileTab.click();
+	}
+	
+	public void clickMyassignmentsTab() {
+		myAssignmentsTab.click();
 	}
 	
 
