@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-17T16:06:20 IST" name="Default suite" finished-at="2023-08-17T16:10:03 IST" duration-ms="223010">
+  <suite started-at="2023-08-24T14:48:57 IST" name="Default suite" finished-at="2023-08-24T14:50:35 IST" duration-ms="98503">
     <groups>
     </groups>
-    <test started-at="2023-08-17T16:06:20 IST" name="Default test" finished-at="2023-08-17T16:10:03 IST" duration-ms="223010">
-      <class name="com.nowonline.qa.testcases.UlogoMyprofilePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nowonline.qa.testcases.UlogoMyprofilePageTest@273e7444]" started-at="2023-08-17T16:06:20 IST" name="setUp" finished-at="2023-08-17T16:07:10 IST" duration-ms="49608" status="PASS">
+    <test started-at="2023-08-24T14:48:57 IST" name="Default test" finished-at="2023-08-24T14:50:35 IST" duration-ms="98503">
+      <class name="com.nowonline.qa.testcases.UlogoMyassignmentsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nowonline.qa.testcases.UlogoMyassignmentsPageTest@273e7444]" started-at="2023-08-24T14:48:57 IST" name="setUp" finished-at="2023-08-24T14:49:41 IST" duration-ms="43866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="UlogoMyProfilePage()[pri:0, instance:com.nowonline.qa.testcases.UlogoMyprofilePageTest@273e7444]" started-at="2023-08-17T16:07:10 IST" name="UlogoMyProfilePage" finished-at="2023-08-17T16:10:03 IST" duration-ms="173367" status="PASS">
+        <test-method signature="UlogoMyassignmentsPage()[pri:0, instance:com.nowonline.qa.testcases.UlogoMyassignmentsPageTest@273e7444]" started-at="2023-08-24T14:49:41 IST" name="UlogoMyassignmentsPage" finished-at="2023-08-24T14:50:35 IST" duration-ms="54251" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UlogoMyProfilePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nowonline.qa.testcases.UlogoMyprofilePageTest@273e7444]" started-at="2023-08-17T16:10:03 IST" name="tearDown" finished-at="2023-08-17T16:10:03 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- UlogoMyassignmentsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nowonline.qa.testcases.UlogoMyassignmentsPageTest@273e7444]" started-at="2023-08-24T14:50:35 IST" name="tearDown" finished-at="2023-08-24T14:50:35 IST" duration-ms="365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.nowonline.qa.testcases.UlogoMyprofilePageTest -->
+      </class> <!-- com.nowonline.qa.testcases.UlogoMyassignmentsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
