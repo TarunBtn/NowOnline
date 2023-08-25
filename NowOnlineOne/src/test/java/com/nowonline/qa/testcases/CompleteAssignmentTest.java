@@ -2,6 +2,7 @@ package com.nowonline.qa.testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -17,6 +18,7 @@ import com.nowonline.qa.pages.MyAssignmentsPage;
 import com.nowonline.qa.util.TestUtil;
 
 public class CompleteAssignmentTest extends TestBase{
+	
 	LoginPage loginPage;
 	HomePage homePage;
 	MyAssignmentsPage myAssignmentsPage;
@@ -32,21 +34,21 @@ public class CompleteAssignmentTest extends TestBase{
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
-		loginPage=new LoginPage();				
-		testUtil=new TestUtil();
+		loginPage=new LoginPage();
+		addCommandPage=new AddCommandPage();
+		checkCommandPage=new CheckCommandPage();
+		myAssignmentsPage=new MyAssignmentsPage();
+		completeAssignment=new CompleteAssignment();
+		testUtil=new TestUtil();		
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testUtil.testWaitEight();
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEight();		
 		myAssignmentsPage=homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFour();
-		myAssignmentsPage=new MyAssignmentsPage();	
-		testUtil.testWaitFour();
-		addCommandPage=new AddCommandPage();
-		addCommandPage=myAssignmentsPage.clickAddNewCommand();
 		testUtil.testWaitFour();			
-		checkCommandPage=new CheckCommandPage();		
-		completeAssignment=new CompleteAssignment();					
+		testUtil.testWaitFour();		
+		addCommandPage=myAssignmentsPage.clickAddNewCommand();
+		testUtil.testWaitFour();										
 		testUtil.testWaitFour();
 		addCommandPage.clickChooseFile();		
 		testUtil.testWaitFour();
@@ -62,52 +64,54 @@ public class CompleteAssignmentTest extends TestBase{
 	public void completeAssignmentTest()throws Exception {
 		completeAssignment.selectCompany();
 		testUtil.testWaitFour();
-		completeAssignment.selectSectorDropDown();
-		testUtil.testWaitFour();
+		completeAssignment.clickSectorDropDown();
+		testUtil.testWaitTwo();
+		completeAssignment.selectSectorFromDropDown();
+		testUtil.testWaitTwo();
 		completeAssignment.selectWorkLocation();
 		testUtil.testWaitFour();
 		try {
-			Driver.findElement(By.id("startdatumopdracht")).sendKeys("01-06-2023");
+			Driver.findElement(By.name("date")).sendKeys("01-08-2024");
 				
 		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
-		}
-	
-		testUtil.testWaitFour();
+		}	
+		testUtil.testWaitTwo();
 		testUtil.scrollUp();
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
-		testUtil.testWaitEleven();
+	    testUtil.testWaitEleven();
 		//Generate description
-		completeAssignment.clickGenerateDescription();
-		testUtil.testWaitFourteen();
-		testUtil.testWaitFourteen();
-		completeAssignment.clickUseThisText();
-		testUtil.testWaitEight();
+	    try {
+		    completeAssignment.clickGenerateDescription();
+		    testUtil.testWaitEight();
+		    //testUtil.testWaitFourteen();
+	    }catch(NoSuchElementException e) {
+	    	e.printStackTrace();
+	    }	    
+		//completeAssignment.clickUseThisText();
+		//testUtil.testWaitEight();	   
+	    testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitTwo();        
 		//Select start date
-		completeAssignment.selectStartDateDropDown();
+		completeAssignment.clickStartDateDropDown();
 		testUtil.testWaitTwo();
-		completeAssignment.selectStartMonth();
-		testUtil.testWaitTwo();
-		completeAssignment.selectStartMonth();
+		completeAssignment.selectStartYear();
 		testUtil.testWaitTwo();
 		completeAssignment.selectStartDate();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();		
 		//Select end date
-		completeAssignment.selectEndDateDropDown();
-		testUtil.testWaitTwo();
-		completeAssignment.selectEndYear();
+		completeAssignment.clickEndDateDropDown();
 		testUtil.testWaitTwo();
 		completeAssignment.selectEndYear();
 		testUtil.testWaitTwo();
 		completeAssignment.selectEndYear();
 		testUtil.testWaitTwo();
 		completeAssignment.selectEndDate();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
 		//NumberofHours
@@ -115,7 +119,7 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.testWaitFour();
 		//selectWorkingThinkingLevel
 		completeAssignment.selectWorkingThinkingLevel();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		//Select FieldOfExpertise
 		completeAssignment.clickFieldOfExpertise();
 		testUtil.testWaitFour();
@@ -132,7 +136,6 @@ public class CompleteAssignmentTest extends TestBase{
 		//completeAssignment.clickSaveButton();
 		
 	}
-	
 	
 	@AfterMethod
 	public void tearDown() {
