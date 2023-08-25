@@ -10,7 +10,7 @@ import com.nowonline.qa.base.TestBase;
 
 public class CompleteAssignment extends TestBase{	
 	//Page factory or Object Repository
-			@FindBy(id="selected_company")
+	        @FindBy(id="selected_company")
 			WebElement companyDropDown;
 			
 			@FindBy(xpath="//*[@id=\"selected_company\"]/option[2]")
