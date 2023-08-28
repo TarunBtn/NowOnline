@@ -35,7 +35,9 @@ public class MyNetworkPageFreeTest extends TestBase{
 		testUtil.testWaitEight();
 		homePageFree.clickAcceptAllCookies();
 		testUtil.testWaitEight();
-		homePageFree.clickCommunityTab();
+		homePageFree.clickNetworkTab();
+		testUtil.testWaitFour();
+		homePageFree.clickNetworkTabTooltip();
 		testUtil.testWaitFour();
 		communityPageFree.clickMyNetworkBtn();
 		testUtil.testWaitFour();
@@ -45,7 +47,7 @@ public class MyNetworkPageFreeTest extends TestBase{
 	@Test
 	public void myNetworkPageFreeTest()throws Exception {
 		myNetworkPageFree.clickMyNetworkTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		myNetworkPageFree.clickMyRequestsTab();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
