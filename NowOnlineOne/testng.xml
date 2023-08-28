@@ -9,6 +9,7 @@
       <class name="com.nowonline.qa.testcases.CheckCommandPageTest"/>
       <class name="com.nowonline.qa.testcases.MyAssignmentsPageTest"/>
       <class name="com.nowonline.qa.testcases.CompleteAssignmentTest"/>
+      <class name="com.nowonline.qa.testcases.MatchPageTest"/>
       <class name="com.nowonline.qa.testcases.AssignmentsPageFreeTest"/>
       <class name="com.nowonline.qa.testcases.StorePageFreeTest"/>
       <class name="com.nowonline.qa.testcases.CommunityPageFreeTest"/>
