@@ -91,7 +91,7 @@ public class CompleteAssignmentTest extends TestBase{
 	    }	    
 		//completeAssignment.clickUseThisText();
 		//testUtil.testWaitEight();	   
-	    testUtil.testWaitTwo();
+	    testUtil.testWaitTwo();;
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
