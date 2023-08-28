@@ -33,7 +33,9 @@ public class CommunityPageFreeTest extends TestBase{
 		testUtil.testWaitEight();
 		homePageFree.clickAcceptAllCookies();
 		testUtil.testWaitEight();
-		homePageFree.clickCommunityTab();
+		homePageFree.clickNetworkTab();
+		testUtil.testWaitTwo();
+		homePageFree.clickNetworkTabTooltip();
 		testUtil.testWaitFour();
 								
 	}
