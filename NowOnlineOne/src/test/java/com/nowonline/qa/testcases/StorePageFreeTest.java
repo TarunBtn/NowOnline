@@ -25,7 +25,6 @@ public class StorePageFreeTest extends TestBase{
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
-		//testUtil.testWaitFour();
 		loginPage=new LoginPage();
 		testUtil=new TestUtil();
 		storePageFree=new StorePageFree();
