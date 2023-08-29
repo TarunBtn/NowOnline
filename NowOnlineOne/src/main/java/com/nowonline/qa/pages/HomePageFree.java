@@ -29,7 +29,7 @@ public class HomePageFree extends TestBase{
 	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[4]/a")
 	WebElement communityTab;
 			
-	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[5]/a")
+	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[6]/a")
 	WebElement entrepreneurTab;
 			
 	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[6]/a")
