@@ -38,6 +38,14 @@ public class BusinessesPageFreeTest extends TestBase{
 	
 	@Test
 	public void businessesPageFree()throws Exception {
+		//Filter value
+		businessesPageFree.filterValue("Apex");
+		testUtil.testWaitEleven();
+		businessesPageFree.filterValueTooltip();
+		testUtil.testWaitEight();
+		businessesPageFree.removeFilter();
+		testUtil.testWaitEleven();
+		//Sector-field removed
 		//businessesPageFree.clickSector();
 		//testUtil.testWaitTwo();
 		//businessesPageFree.selectSector();
