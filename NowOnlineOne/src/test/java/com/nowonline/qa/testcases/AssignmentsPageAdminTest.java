@@ -152,11 +152,7 @@ public class AssignmentsPageAdminTest extends TestBase{
 	  	testUtil.testWaitTwo();
 	  	assignmentsPageFree.resetLocation();
 	  	testUtil.testWaitEight();
-	  	assignmentsPageFree.clickLocationTab();
-	  	testUtil.testWaitFour();
-	  	assignmentsPageFree.clickCancelLocation();
-	  	testUtil.testWaitFour();
-	  	//View matches
+	    //View matches
 	  	assignmentsPageFree.clickViewMatches();
 	  	testUtil.testWaitEight();
 	  	assignmentsPageFree.clickViewMatches();
