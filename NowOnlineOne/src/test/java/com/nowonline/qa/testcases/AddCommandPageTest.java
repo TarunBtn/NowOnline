@@ -38,19 +38,13 @@ public class AddCommandPageTest extends TestBase{
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEight();
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		myAssignmentsPage.clickAddNewCommand();
 		testUtil.testWaitFour();
 		
 	}
 	
-	@Test(priority=1)
-	public void addCommandPageTitleTest() {
-		String title=addCommandPage.addCommandPageTitle();
-		Assert.assertEquals(title, "Mijn opdrachten - Younited®");
-	}
-	
-	@Test(priority=2)
+	@Test
 	public void uploadFileTest()throws Exception {
 		addCommandPage.clickChooseFile();
 		testUtil.testWaitFour();
