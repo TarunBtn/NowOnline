@@ -33,8 +33,8 @@ public class UlogoMydashboardPageTest extends TestBase{
 		testUtil.testWaitFour();
 		homePageAdmin.clickMydashboardTab();
 		testUtil.testWaitFour();
-		homePageAdmin.clickCloseMenu();
-		testUtil.testWaitFour();
+		homePageAdmin.moveHoverTologoImage();
+		testUtil.testWaitTwo();
 		
 	}
 	
