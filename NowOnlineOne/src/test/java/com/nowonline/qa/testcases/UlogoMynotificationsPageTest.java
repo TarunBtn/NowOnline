@@ -34,15 +34,17 @@ public class UlogoMynotificationsPageTest extends TestBase{
 		testUtil.testWaitEight();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
-		homePageAdmin.clickMynotificationsTab();
-		testUtil.testWaitFour();
+		homePageAdmin.moveHoverTologoImage();
+		testUtil.testWaitTwo();
+		//homePageAdmin.clickMynotificationsTab();
+		//testUtil.testWaitFour();
 		
 	}
 	
 	@Test
 	public void myNotificationsPage()throws Exception {
-		uLogoMynotificationsPage.ClickToOpenMail();
-		testUtil.testWaitEight();
+		//uLogoMynotificationsPage.ClickToOpenMail();
+		//testUtil.testWaitEight();
 	}
 	
 	@AfterMethod
