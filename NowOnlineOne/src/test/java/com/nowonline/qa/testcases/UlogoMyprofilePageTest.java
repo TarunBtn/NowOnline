@@ -212,9 +212,9 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		uLogoMyprofilePage.clickDeleteEducations();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		uLogoMyprofilePage.clickConfirmDeleteEducations();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
@@ -257,7 +257,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 	
 	@AfterMethod
 	public void tearDown() {
-		//Driver.quit();
+		Driver.quit();
 	}
 
 }

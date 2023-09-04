@@ -37,7 +37,7 @@ public class UlogoMyassignmentsPageTest extends TestBase{
 		testUtil.testWaitEight();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
-		homePageAdmin.clickMyassignmentsTab();
+		homePageAdmin.clickMyAssignmentsTab();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
