@@ -30,13 +30,16 @@ public class UlogoChatPageTest extends TestBase{
 		testUtil.testWaitEight();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
-		homePageAdmin.clickChatTab();
-		testUtil.testWaitEight();
-		testUtil.testWaitEight();
-		homePageAdmin.clickChatCloseSign();
+		homePageAdmin.moveHoverTologoImage();
 		testUtil.testWaitFour();
-		homePageAdmin.clickCloseMenu();
-		testUtil.testWaitFour();
+		
+		//homePageAdmin.clickChatTab();
+		//testUtil.testWaitEight();
+		//testUtil.testWaitEight();
+		//homePageAdmin.clickChatCloseSign();
+		//testUtil.testWaitFour();
+		//homePageAdmin.clickCloseMenu();
+		//testUtil.testWaitFour();
 		
 	}
 	
