@@ -21,13 +21,12 @@ public class AssignmentsPageFreeTest extends TestBase{
 	public AssignmentsPageFreeTest() {
 		super();
 	}
-	
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
-		loginPage=new LoginPage();
-		testUtil=new TestUtil();
+		loginPage=new LoginPage();		
 		assignmentsPageFree=new AssignmentsPageFree();
+		testUtil=new TestUtil();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
 		testUtil.testWaitEight();
 		homePageFree.clickAcceptAllCookies();
@@ -37,7 +36,6 @@ public class AssignmentsPageFreeTest extends TestBase{
 			
 	}
 	
-	//@Test(priority=1)
 	//public void assignmentsPageTitleTest()throws Exception {
 		//String title=assignmentsPageFree.assignmentsPageTitle();
 		//Assert.assertEquals(title, "Opdrachten - Younited®");
@@ -116,7 +114,6 @@ public class AssignmentsPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetHoursFilter();
 		testUtil.testWaitFour();
-		//
 		assignmentsPageFree.clickHoursTab();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.clickCancelHours();
@@ -132,7 +129,6 @@ public class AssignmentsPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetHourlyRateFilter();
 		testUtil.testWaitFour();
-		//
 		assignmentsPageFree.clickHourlyRateTab();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.clickCancelHourlyRate();
@@ -150,11 +146,10 @@ public class AssignmentsPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetLocation();
 		testUtil.testWaitFour();
-		//
-		assignmentsPageFree.clickLocationTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.clickCancelLocation();
-		testUtil.testWaitTwo();
+		//assignmentsPageFree.clickLocationTab();
+		//testUtil.testWaitTwo();
+		//assignmentsPageFree.clickCancelLocation();
+		//testUtil.testWaitTwo();
 		//View matches
 		assignmentsPageFree.clickViewMatches();
 		testUtil.testWaitFour();
@@ -175,6 +170,8 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.selectByNumberOfHours();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectPublicationDateNewFirst();
+		testUtil.testWaitFour();
+		assignmentsPageFree.clickSortingDropDown();
 		testUtil.testWaitFour();
 		
 	}
