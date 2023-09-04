@@ -86,7 +86,7 @@ public class UlogoMyprofilePage extends TestBase{
 		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/form/div[12]/div/button")
 		WebElement saveBtn;
 				
-		@FindBy(xpath="//*[@id=\"timeline\"]/div[3]/div[2]/div/div/a")
+		@FindBy(xpath="//*[@id=\"timeline\"]/div[2]/div[2]/div/div/a[1]")
 		WebElement editWorkExperience;
 				
 		@FindBy(xpath="//*[@id=\"app\"]/main/div/div[2]/form/div[13]/div/a")
