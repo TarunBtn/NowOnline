@@ -36,6 +36,8 @@ public class UlogoMyprofilePageTest extends TestBase{
 		testUtil.testWaitFour();
 		homePageAdmin.clickMyProfileTab();
 		testUtil.testWaitEight();
+		homePageAdmin.moveHoverTologoImage();
+		testUtil.testWaitFour();
 		
 	}
 	
@@ -255,7 +257,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 	
 	@AfterMethod
 	public void tearDown() {
-		Driver.quit();
+		//Driver.quit();
 	}
 
 }
