@@ -51,6 +51,9 @@ public class HomePageAdmin extends TestBase{
 			@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[1]/a/img[1]")
 			WebElement logoImage;
 			
+			@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[2]/div[1]/ul/li[4]/div/div/div/div[2]/ul/li[4]/a")
+			WebElement myCompanyTab;
+			
 				
 			//Initialization
 			public HomePageAdmin() {
@@ -119,6 +122,10 @@ public class HomePageAdmin extends TestBase{
 			public void moveHoverTologoImage() {
 				Actions builder=new Actions(Driver);
 				builder.moveToElement(logoImage).build().perform();
+			}
+			
+			public void clickMyCompanyTab() {
+				myCompanyTab.click();
 			}
 	
 
