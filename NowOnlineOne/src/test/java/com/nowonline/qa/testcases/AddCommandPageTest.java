@@ -51,7 +51,7 @@ public class AddCommandPageTest extends TestBase{
 		testUtil.uploadFile("D:\\Testfile.docx");
 		testUtil.testWaitFour();
 		checkCommandPage=addCommandPage.clickUploadFile();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 	}
 	
 	@AfterMethod
