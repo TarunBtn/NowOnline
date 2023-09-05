@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nowonline.qa.testcases.UlogoMyassignmentsPageTest">
+      <class name="com.nowonline.qa.testcases.CheckCommandPageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="UlogoMyassignmentsPage"/>
+          <include name="tearDown"/>
+          <include name="checkCommandPageTitleTest"/>
+          <include name="checkCommandPageTest"/>
         </methods>
-      </class> <!-- com.nowonline.qa.testcases.UlogoMyassignmentsPageTest -->
+      </class> <!-- com.nowonline.qa.testcases.CheckCommandPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
