@@ -9,7 +9,7 @@ import com.nowonline.qa.base.TestBase;
 public class MyAssignmentsPage extends TestBase{
 	
 	//Page factory or Object Repository
-		@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div[1]/div/a/font/font")
+		@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div[1]/div/a")
 		WebElement addNewCommand;
 			
 		@FindBy(id="filter-input")
