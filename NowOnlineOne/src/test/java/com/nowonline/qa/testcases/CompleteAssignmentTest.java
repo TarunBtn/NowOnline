@@ -45,7 +45,7 @@ public class CompleteAssignmentTest extends TestBase{
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEight();		
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitEight();							
+		testUtil.testWaitEight();						
 		myAssignmentsPage.clickAddNewCommand();
 		testUtil.testWaitEight();												
 		addCommandPage.clickChooseFile();		
@@ -68,12 +68,14 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.testWaitTwo();
 		completeAssignment.selectWorkLocation();
 		testUtil.testWaitFour();
-		try {
-			Driver.findElement(By.name("date")).sendKeys("01-08-2024");
+		//completeAssignment.clickWorkLocationTooltip();
+		//testUtil.testWaitFour();
+		//try {
+			//Driver.findElement(By.name("date")).sendKeys("01-08-2024");
 				
-		}catch(ElementNotInteractableException e) {
-			e.printStackTrace();
-		}	
+		//}catch(ElementNotInteractableException e) {
+			//e.printStackTrace();
+		//}	
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
 		testUtil.testWaitTwo();
@@ -117,16 +119,12 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.testWaitFour();
 		//selectWorkingThinkingLevel
 		completeAssignment.selectWorkingThinkingLevel();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Select FieldOfExpertise
 		completeAssignment.clickFieldOfExpertise();
 		testUtil.testWaitFour();
 		completeAssignment.selectFieldOfExpertise();
 		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
@@ -137,7 +135,7 @@ public class CompleteAssignmentTest extends TestBase{
 	
 	@AfterMethod
 	public void tearDown() {
-		Driver.quit();
+		//Driver.quit();
 	}
 
 }
