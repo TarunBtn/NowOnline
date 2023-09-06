@@ -27,41 +27,47 @@ public class MyAssignmentsPageTest extends TestBase{
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();	
-		testUtil=new TestUtil();		
-		loginPage=new LoginPage();		
+				
+		loginPage=new LoginPage();
+		addCommandPage=new AddCommandPage();
+		myAssignmentsPage=new MyAssignmentsPage();
+		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testUtil.testWaitEight();
 		homePage.clickAcceptAllCookies();
-		testUtil.testWaitEight();
-		myAssignmentsPage=new MyAssignmentsPage();
+		testUtil.testWaitEight();		
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFour();
-		addCommandPage=new AddCommandPage();
-		//checkCommandPage=new CheckCommandPage();		
+		testUtil.testWaitFourteen();		
+		//checkCommandPage=new CheckCommandPage();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 													
 	}
 	
 	@Test
 	public void myAssignmentsPageTest()throws Exception {
-		myAssignmentsPage.enterValueInFilter();
-		testUtil.testWaitFour();
+		myAssignmentsPage.enterValueInFilter("Test");
+		testUtil.testWaitEleven();
 		myAssignmentsPage.clickResetFilter();
-		testUtil.testWaitEight();
-		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
 		myAssignmentsPage.clickChooseCompanyDropDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		myAssignmentsPage.selectCompany();
 		testUtil.testWaitFour();
 		myAssignmentsPage.clickChooseCompanyDropDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		myAssignmentsPage.StatusDropDown();
 		testUtil.testWaitFour();
 		myAssignmentsPage.selectStatusFromDropDown();
 		testUtil.testWaitFour();
 		myAssignmentsPage.StatusDropDown();
+		testUtil.testWaitTwo();
+		myAssignmentsPage.StatusDropDown();
+		testUtil.testWaitTwo();
+		myAssignmentsPage.clearStatusFromDropDown();
 		testUtil.testWaitFour();
-		
+		myAssignmentsPage.StatusDropDown();
+		testUtil.testWaitTwo();
 	}
 	
 	@AfterMethod

@@ -21,7 +21,7 @@ public class MyAssignmentsPage extends TestBase{
 		@FindBy(id="initial-sort-select")
 		WebElement chooseCompanyDropDown;
 			
-		@FindBy(xpath="//*[@id=\"initial-sort-select\"]/option[3]")
+		@FindBy(xpath="//*[@id=\"initial-sort-select\"]/option[2]")
 		WebElement selectCompanyFromDropDown;
 		
 		@FindBy(xpath="//*[@id=\"table\"]/tbody/tr[1]/td[4]/div/a/span")
@@ -59,6 +59,9 @@ public class MyAssignmentsPage extends TestBase{
 			
 		@FindBy(xpath="//option[@value='Open']")
 		WebElement selectStatusFromDropDown;
+		
+		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div[2]/div/div/div[1]/div[3]/select/option[1]")
+		WebElement clearStatusFromDropDown;
 			
 			
 			
@@ -68,8 +71,8 @@ public class MyAssignmentsPage extends TestBase{
 		}
 			
 		//Actions
-		public void enterValueInFilter() {
-			filter.sendKeys("Test");
+		public void enterValueInFilter(String value) {
+			filter.sendKeys(value);
 		}
 			
 		public void clickResetFilter() {
@@ -127,6 +130,10 @@ public class MyAssignmentsPage extends TestBase{
 			
 		public void selectStatusFromDropDown() {
 			selectStatusFromDropDown.click();
+		}
+		
+		public void clearStatusFromDropDown() {
+			clearStatusFromDropDown.click();
 		}
 			
 		public AddCommandPage clickAddNewCommand() {
