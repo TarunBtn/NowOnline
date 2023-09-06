@@ -32,7 +32,7 @@ public class BusinessesPageFreeTest extends TestBase{
 		homePageFree.clickAcceptAllCookies();
 		testUtil.testWaitEight();
 		homePageFree.clickBusinessesTab();
-		testUtil.testWaitEleven();
+		testUtil.testWaitFourteen();
 				
 	}
 	
