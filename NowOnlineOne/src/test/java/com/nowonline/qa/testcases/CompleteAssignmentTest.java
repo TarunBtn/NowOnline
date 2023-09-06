@@ -45,19 +45,19 @@ public class CompleteAssignmentTest extends TestBase{
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEight();		
 		myAssignmentsPage=homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFour();			
-		testUtil.testWaitFour();		
+		testUtil.testWaitEight();			
+				
 		addCommandPage=myAssignmentsPage.clickAddNewCommand();
-		testUtil.testWaitFour();										
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();										
+		
 		addCommandPage.clickChooseFile();		
 		testUtil.testWaitFour();
 		testUtil.uploadFile("D:\\Testfile.docx");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
 		testUtil.testWaitEight();
 		checkCommandPage.clickFillInComplete();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 	}
 	
 	@Test
