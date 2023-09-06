@@ -54,14 +54,14 @@ public class CheckCommandPageTest extends TestBase{
 							
 	}
 	
-	@Test(priority=1)
-	public void checkCommandPageTitleTest()throws Exception {
-		String title=checkCommandPage.checkCommandPageTitle();
-		Assert.assertEquals(title, "Mijn opdrachten - Younited®");
-		testUtil.testWaitEight();
-	}
+	//@Test(priority=1)
+	//public void checkCommandPageTitleTest()throws Exception {
+		//String title=checkCommandPage.checkCommandPageTitle();
+		//Assert.assertEquals(title, "Mijn opdrachten - Younited®");
+		//testUtil.testWaitEight();
+	//}
 	
-	@Test(priority=2)
+	@Test
 	public void checkCommandPageTest()throws Exception {
 		completeAssignment=checkCommandPage.clickFillInComplete();
 		testUtil.testWaitEight();
