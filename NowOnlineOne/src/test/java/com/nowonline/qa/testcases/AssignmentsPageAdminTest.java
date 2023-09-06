@@ -73,8 +73,8 @@ public class AssignmentsPageAdminTest extends TestBase{
 		testUtil.testWaitTwo();
 		assignmentsPageFree.enterSkillValue("Postman");
 		testUtil.testWaitFour();
-		assignmentsPageFree.selectSkillToolTip();
-		testUtil.testWaitFour();
+		//assignmentsPageFree.selectSkillToolTip();
+		//testUtil.testWaitFour();
 		assignmentsPageFree.applySkillFilter();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickSkillTab();
