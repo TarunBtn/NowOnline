@@ -40,7 +40,7 @@ public class MyNetworkPageFreeTest extends TestBase{
 		homePageFree.clickNetworkTabTooltip();
 		testUtil.testWaitFour();
 		communityPageFree.clickMyNetworkBtn();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		
 	}
 	
@@ -49,7 +49,7 @@ public class MyNetworkPageFreeTest extends TestBase{
 		myNetworkPageFree.clickMyNetworkTab();
 		testUtil.testWaitEight();
 		myNetworkPageFree.clickMyRequestsTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
 		myNetworkPageFree.clickSuggestionsForYouTab();
@@ -57,7 +57,7 @@ public class MyNetworkPageFreeTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
 		myNetworkPageFree.clickAreaOfInterest();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 	}
 	
 	@AfterMethod
