@@ -45,11 +45,9 @@ public class CompleteAssignmentTest extends TestBase{
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEight();		
 		myAssignmentsPage=homePage.clickMyAssignmentsLink();
-		testUtil.testWaitEight();			
-				
+		testUtil.testWaitEight();							
 		addCommandPage=myAssignmentsPage.clickAddNewCommand();
-		testUtil.testWaitEight();										
-		
+		testUtil.testWaitEight();												
 		addCommandPage.clickChooseFile();		
 		testUtil.testWaitFour();
 		testUtil.uploadFile("D:\\Testfile.docx");
