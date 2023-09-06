@@ -42,7 +42,7 @@ public class CheckCommandPageTest extends TestBase{
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEight();
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitEleven();
+		testUtil.testWaitFourteen();
 		addCommandPage=myAssignmentsPage.clickAddNewCommand();
 		testUtil.testWaitEleven();
 		addCommandPage.clickChooseFile();
