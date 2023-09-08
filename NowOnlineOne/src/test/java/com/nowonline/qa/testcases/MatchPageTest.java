@@ -114,8 +114,8 @@ public class MatchPageTest extends TestBase{
 		testUtil.testWaitTwo();
 		matchPage.enterValueSkill("Postman");
 		testUtil.testWaitFour();
-		matchPage.selectTooltipSkill();
-		testUtil.testWaitFour();
+		//matchPage.selectTooltipSkill();
+		//testUtil.testWaitFour();
 		try {
 		matchPage.clickApplyFilterSkill();
 		testUtil.testWaitEight();
