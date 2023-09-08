@@ -54,6 +54,9 @@ public class HomePageAdmin extends TestBase{
 			@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[2]/div[1]/ul/li[4]/div/div/div/div[2]/ul/li[4]/a")
 			WebElement myCompanyTab;
 			
+			@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[2]/div[1]/ul/li[4]/div/div/div/div[2]/ul/span[4]/li[1]/a")
+			WebElement myReactionsTab;
+			
 				
 			//Initialization
 			public HomePageAdmin() {
@@ -126,6 +129,10 @@ public class HomePageAdmin extends TestBase{
 			
 			public void clickMyCompanyTab() {
 				myCompanyTab.click();
+			}
+			
+			public void clickMyReactionsTab() {
+				myReactionsTab.click();
 			}
 	
 
