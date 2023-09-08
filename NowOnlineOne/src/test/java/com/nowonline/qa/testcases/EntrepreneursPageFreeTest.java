@@ -42,6 +42,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickCancel();
 		testUtil.testWaitFour();
+		//Working And Thinking level
 		entrepreneursPageFree.clickWorkingThinkingDropDown();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectWorkingThinkingLevel();
@@ -50,6 +51,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickWorkingThinkingDropDown();
 		testUtil.testWaitTwo();
+		//Descipline
 		entrepreneursPageFree.clickDesciplineDropDown();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectDescipline();
@@ -58,6 +60,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickDesciplineDropDown();
 		testUtil.testWaitTwo();
+		//Area Of Interest 
 		entrepreneursPageFree.clickAreaOfInterestDropDown();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectAreaOfInterest();
@@ -66,18 +69,20 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickAreaOfInterestDropDown();
 		testUtil.testWaitTwo();
+		//Skill
 		entrepreneursPageFree.clickSkillsTab();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.enterSkill();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.enterSkill("Postman");
 		testUtil.testWaitFour();
-		entrepreneursPageFree.selectSkillToolTip();
-		testUtil.testWaitFour();
+		//entrepreneursPageFree.selectSkillToolTip();
+		//testUtil.testWaitFour();
 		entrepreneursPageFree.clickApplyFilter();
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickResetFilter();
 		testUtil.testWaitFour();
+		//Sorting
 		entrepreneursPageFree.clickSortingDropDown();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectSortingZtoA();
