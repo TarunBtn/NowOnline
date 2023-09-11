@@ -26,6 +26,7 @@
       <class name="com.nowonline.qa.testcases.UlogoMyprofilePageTest"/>
       <class name="com.nowonline.qa.testcases.UlogoMycompanyPageTest"/>
       <class name="com.nowonline.qa.testcases.UlogoMyreactionsPageTest"/>
+      <class name="com.nowonline.qa.testcases.UlogoUsermanagementPageTest"/>
        
     </classes>
   </test> <!-- Test -->
