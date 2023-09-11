@@ -124,8 +124,8 @@ public class MatchPageAdminTest extends TestBase{
 		testUtil.testWaitTwo();
 		matchPageAdmin.enterValueSkill("Postman");
 		testUtil.testWaitFour();
-		//matchPageAdmin.selectTooltipSkill();
-		//testUtil.testWaitFour();
+		matchPageAdmin.selectTooltipSkill();
+		testUtil.testWaitFour();
 		matchPageAdmin.clickApplyFilterSkill();
 		testUtil.testWaitEight();
 		matchPageAdmin.clickResetFilterSkill();
