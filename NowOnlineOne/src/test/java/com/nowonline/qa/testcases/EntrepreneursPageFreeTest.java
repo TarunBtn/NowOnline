@@ -76,8 +76,8 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.enterSkill("Postman");
 		testUtil.testWaitFour();
-		//entrepreneursPageFree.selectSkillToolTip();
-		//testUtil.testWaitFour();
+		entrepreneursPageFree.selectSkillToolTip();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.clickApplyFilter();
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickResetFilter();
