@@ -56,24 +56,28 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		testUtil.testWaitFour();
 		uLogoUsermanagementPage.clickResetEmailAddress();
 		testUtil.testWaitFour();
+		//Roles
 		uLogoUsermanagementPage.clickRoleDropDown();
 		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.selectRole();
 		testUtil.testWaitFour();
 		uLogoUsermanagementPage.clickRoleDropDown();
 		testUtil.testWaitTwo();
+		//Availability
 		uLogoUsermanagementPage.clickEverythingDropDown();
 		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.selectOnlyAvailable();
 		testUtil.testWaitFour();
 		uLogoUsermanagementPage.clickEverythingDropDown();
 		testUtil.testWaitTwo();
+		//Descipline
 		uLogoUsermanagementPage.clickDesciplineDropDown();
 		testUtil.testWaitTwo();
 		uLogoUsermanagementPage.selectDescipline();
 		testUtil.testWaitFour();
 		uLogoUsermanagementPage.clickDesciplineDropDown();
 		testUtil.testWaitTwo();
+		//ElevatorPitch
 		uLogoUsermanagementPage.clickElevatorPitch();
 		testUtil.testWaitEight();
 		uLogoUsermanagementPage.clickElevatorPitch();
@@ -93,6 +97,21 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		uLogoUsermanagementPage.selectResetRole();
 		testUtil.testWaitFour();
 		uLogoUsermanagementPage.clickRoleDropDown();
+		testUtil.testWaitTwo();
+		//Skills
+		uLogoUsermanagementPage.clickSkillsTab();
+		testUtil.testWaitTwo();
+		uLogoUsermanagementPage.enterValueSkills("Postman");
+		testUtil.testWaitFour();
+		uLogoUsermanagementPage.selectTooltipSkills();
+		testUtil.testWaitFour();
+		uLogoUsermanagementPage.clickApplyFilterSkills();
+		testUtil.testWaitEight();
+		uLogoUsermanagementPage.clickResetFilterSkills();
+		testUtil.testWaitFour();
+		uLogoUsermanagementPage.clickSkillsTab();
+		testUtil.testWaitTwo();
+		uLogoUsermanagementPage.clickCancelSkills();
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
 		testUtil.testWaitTwo();

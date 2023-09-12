@@ -51,6 +51,24 @@ public class UlogoUsermanagementPage extends TestBase{
 		@FindBy(xpath="//*[@id=\"my-companies\"]/div/div/div/div/div/div[2]/div[3]/div/label")
 		WebElement elevatorPitch;
 		
+		@FindBy(id="dropdown-skills-btn")
+		WebElement skillsTab;
+		
+		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div/div/div[1]/div[5]/div/div/form/div[1]/div/div/div[1]/input")
+		WebElement enterValueSkills;
+		
+		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div/div/div[1]/div[5]/div/div/form/div[1]/div/div/div[2]/a/div[2]/span/span")
+		WebElement selectTooltipSkills;
+		
+		@FindBy(xpath="//*[@id=\"dropdown-user-profile\"]/div/form/div[4]/button")
+		WebElement clickApplyFilterSkills;
+		
+		@FindBy(xpath="//*[@id=\"dropdown-user-profile\"]/div/form/div[4]/a[2]")
+		WebElement clickResetFilterSkills;
+		
+		@FindBy(xpath="//*[@id=\"dropdown-user-profile\"]/div/form/div[4]/a[1]")
+		WebElement cancelSkills;
+		
 		
 		//Initialization
 		public UlogoUsermanagementPage() {
@@ -112,6 +130,30 @@ public class UlogoUsermanagementPage extends TestBase{
 		
 		public void clickElevatorPitch() {
 			elevatorPitch.click();
+		}
+		
+		public void clickSkillsTab() {
+			skillsTab.click();
+		}
+		
+		public void enterValueSkills(String value) {
+			enterValueSkills.sendKeys(value);
+		}
+		
+		public void selectTooltipSkills() {
+			selectTooltipSkills.click();
+		}
+		
+		public void clickApplyFilterSkills() {
+			clickApplyFilterSkills.click();
+		}
+		
+		public void clickResetFilterSkills() {
+			clickResetFilterSkills.click();
+		}
+		
+		public void clickCancelSkills() {
+			cancelSkills.click();
 		}
 
 }
