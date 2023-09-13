@@ -14,7 +14,7 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[1]/a/img[1]")
 	WebElement imageLogo;
 		
-	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[4]/a")
+	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a")
 	WebElement myAssignmentsLink;
 		
 	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[1]/a")

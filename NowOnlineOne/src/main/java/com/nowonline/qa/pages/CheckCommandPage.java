@@ -9,7 +9,7 @@ import com.nowonline.qa.base.TestBase;
 public class CheckCommandPage extends TestBase{
 	
 	//Page factory or Object Repository
-	@FindBy(xpath="//*[@id=\"general-company-edit\"]/div/div/div[3]/div/div/button")
+	@FindBy(xpath="//*[@id=\"general-company-edit\"]/div/div/div[2]/button")
 	WebElement fillInComplete;
 		
 	//Initialization
