@@ -29,6 +29,18 @@ public class UlogoIntermediarycompaniesPage extends TestBase{
 		@FindBy(xpath="//*[@id=\"general-company-edit\"]/form/div[15]/div/button")
 		WebElement clickSaveBtn;
 		
+		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div[2]/div/table/tbody/tr[1]/td[4]/a[2]/span")
+		WebElement clickEditSign;
+		
+		@FindBy(xpath="//*[@id=\"general-company-edit\"]/form/div[15]/div/button")
+		WebElement clickEditSaveBtn;
+		
+		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div[2]/div/table/tbody/tr[1]/td[4]/a[3]/span")
+		WebElement clickDeleteSign;
+		
+		@FindBy(xpath="//*[@id=\"remove_company___BV_modal_footer_\"]/button[1]")
+		WebElement clickDeleteCompany;
+		
 		//Initialization
 		public UlogoIntermediarycompaniesPage() {
 			PageFactory.initElements(Driver, this);
@@ -69,6 +81,26 @@ public class UlogoIntermediarycompaniesPage extends TestBase{
 		
 		public void clickSaveBtn() {
 			clickSaveBtn.click();
+		}
+		
+		public void clickEditBtn() {
+			clickEditSign.click();
+		}
+		
+		public void clearCompanyName(){
+			companyName.clear();
+		}
+
+		public void clickSaveBtnEdit() {
+			clickEditSaveBtn.click();
+		}
+		
+		public void clickDeleteSign() {
+			clickDeleteSign.click();
+		}
+		
+		public void clickDeleteCompany() {
+			clickDeleteCompany.click();
 		}
 
 }

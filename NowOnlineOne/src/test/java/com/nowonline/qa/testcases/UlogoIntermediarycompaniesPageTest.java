@@ -52,6 +52,7 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		//testUtil.testWaitTwo();
 		//uLogoIntermediarycompanyPage.clickCancelSearch();
 		//testUtil.testWaitTwo();
+		//Add new company
 		uLogoIntermediarycompanyPage.clickAddNewCompany();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
@@ -62,13 +63,39 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
+		//Enter website
 		uLogoIntermediarycompanyPage.clearWebsiteValue();
 		testUtil.testWaitTwo();
 		uLogoIntermediarycompanyPage.enterWebsite("https://silvertouch.com/");
 		testUtil.testWaitTwo();
-		//uLogoIntermediarycompanyPage.clickSaveBtn();
-		//testUtil.testWaitFour();
-		
+		//Save company
+		uLogoIntermediarycompanyPage.clickSaveBtn();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitEight();
+		//Edit company
+		uLogoIntermediarycompanyPage.clickEditBtn();
+		testUtil.testWaitFour();
+		uLogoIntermediarycompanyPage.clearCompanyName();
+		testUtil.testWaitTwo();
+		uLogoIntermediarycompanyPage.enterCompanyName("One");
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		//Save
+		uLogoIntermediarycompanyPage.clickSaveBtnEdit();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		//Delete Company
+		uLogoIntermediarycompanyPage.clickDeleteSign();
+		testUtil.testWaitTwo();
+		uLogoIntermediarycompanyPage.clickDeleteCompany();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitFour();
 		
 	}
 	
