@@ -12,7 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.nowonline.qa.util.TestUtil;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class TestBase {
@@ -36,14 +36,14 @@ public class TestBase {
 	@SuppressWarnings("deprecation")
 	public void initialization() {
 		String browserName=prop.getProperty("browser");
-		WebDriverManager.chromedriver().setup();
-		//if(browserName.equals("chrome")) {
-			//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-		Driver=new ChromeDriver();
-		//}else if(browserName.equals("FF")) {
-			//System.setProperty("webdriver.gecko.driver", "C:\\geckodriver\\geckodriver.exe");
-			//Driver=new FirefoxDriver();
-		//}
+		if(browserName.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+			//WebDriverManager.chromedriver().setup();
+		    Driver=new ChromeDriver();
+		}else if(browserName.equals("FF")) {
+			System.setProperty("webdriver.gecko.driver", "C:\\geckodriver\\geckodriver.exe");
+			Driver=new FirefoxDriver();
+		}
 		
 		Driver.manage().window().maximize();
 		Driver.manage().deleteAllCookies();
