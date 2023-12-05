@@ -35,16 +35,16 @@ public class TestBase {
 	
 	@SuppressWarnings("deprecation")
 	public void initialization() {
-		String browserName=prop.getProperty("browser");
-		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-			//WebDriverManager.chromedriver().setup();
-		    Driver=new ChromeDriver();
-		}else if(browserName.equals("FF")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\geckodriver\\geckodriver.exe");
-			Driver=new FirefoxDriver();
-		}
+		//String browserName=prop.getProperty("browser");
+		//if(browserName.equals("chrome")) {
+			//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+		    //Driver=new ChromeDriver();
+		//}else if(browserName.equals("FF")) {
+			//System.setProperty("webdriver.gecko.driver", "C:\\geckodriver\\geckodriver.exe");
+			//Driver=new FirefoxDriver();
+		//}
 		
+		Driver=new ChromeDriver();
 		Driver.manage().window().maximize();
 		Driver.manage().deleteAllCookies();
 		Driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
