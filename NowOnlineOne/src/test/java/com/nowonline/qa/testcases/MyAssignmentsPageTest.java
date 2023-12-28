@@ -34,7 +34,7 @@ public class MyAssignmentsPageTest extends TestBase{
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testUtil.testWaitFourteen();
 		homePage.clickAcceptAllCookies();
-		testUtil.testWaitEight();		
+		testUtil.testWaitEleven();		
 		homePage.clickMyAssignmentsLink();
 		testUtil.testWaitEleven();
 		testUtil.testWaitEight();
