@@ -56,9 +56,7 @@
         <methods>
           <include name="verifyImageLogoTest"/>
           <include name="setUp"/>
-          <include name="homePageTitleTest"/>
           <include name="tearDown"/>
-          <include name="clickMyAssignmentsLinkTest"/>
         </methods>
       </class> <!-- com.nowonline.qa.testcases.HomePageTest -->
       <class name="com.nowonline.qa.testcases.UlogoAllcompaniesPageTest">
